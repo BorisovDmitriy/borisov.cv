@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+
+
+<head>
+  {% load static %}
+
+  {% block title%}
+  {% endblock title%}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Резюме</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'images/portfolio/favicon.png' %}" rel="icon">
+  <link href="{% static 'images/portfolio/apple-touch-icon.png'  %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor_portfo/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor_portfo/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+  <link href="{% static 'vendor_portfo/bootstrap/css/bootstrap.min.css.map'%}" rel="stylesheet">
+
+  <link href="{% static 'vendor_portfo/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor_portfo/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor_portfo/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor_portfo/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/portfo/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+      * Template Name: iPortfolio
+      * Updated: Nov 17 2023 with Bootstrap v5.3.2
+      * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+      * Author: BootstrapMade.com
+      * License: https://bootstrapmade.com/license/
+      ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="{% static 'images/portfolio/Avatarka.jpg'%}" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="{% url 'home' %}">Борисов Дмитрий</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/BorisovDmitriy" class="btn btn-icon btn-secondary btn-github"
+            aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://t.me/dmitry_top63" class="btn btn-icon btn-secondary btn-telegram" aria-label="Telegram"><i
+              class="bx bxl-telegram"></i></a>
+          <a href="mailto:borisovds90@gmail.comcd" class="btn btn-icon btn-secondary btn-google" aria-label="Google"><i
+              class="bx bxl-google"></i></a>
+          <a href="mailto:texno_log_90@mail.ru" class="btn btn-icon btn-secondary btn-envelope" aria-label="Mail"><i
+              class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Главная</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Обо мне</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Резюме</span></a></li>
+          <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+              <span>Портфолио</span></a></li> -->
+          <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+          <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> -->
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Борисов Дмитрий</h1>
+      <p><span class="typed" data-typed-items="Инженер технолог,Python backend разработчик"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Обо мне</h2>
+          <p>Я люблю веб-разработку и занимаюсь ей около 3-х лет. Имею опыт разработки бэка на
+            Django и DRF. Опираясь на опыт полученный в процессе обучения на курсах и навыках освоенных самостоятельно,
+            способен выполнять поставленные задачи.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="{% static 'images/portfolio/AVA_1.jpg'%}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Инженер технолог &amp; Python backend разработчик</h3>
+            <p class="fst-italic">
+              Ценность полученного мной опыта в том, что я могу глубже погружаться в поставленную задачу
+              на основе существующих знаний.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>День рождения:</strong> <span>14 Июля 1990</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Телефон:</strong> <span>8-927-738-26-22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Город:</strong> <span>Самара</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Возраст:</strong> <span>33</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Уровень:</strong> <span>Junior</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Почта:</strong> <span>texno_log_90@mail.ru</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Формат работы:</strong> <span>частичная занятость,
+                      проектная работа, стажировка</span></li>
+                </ul>
+              </div>
+            </div>
+            <p> Считаю, что разработчик, понимающий весь стек технологий, способен:
+              <li><i class="bi bi-chevron-right"></i> <span> Писать более качественные приложения;</span></li>
+              <li><i class="bi bi-chevron-right"></i> <span> Обладая обширным арсеналом идей и концепций, лучше
+                  справляться со своими основными задачами;</span></li>
+              <li><i class="bi bi-chevron-right"></i> <span> Более эффективно взаимодействовать с коллегами;</span></li>
+              <li><i class="bi bi-chevron-right"></i> <span> Лучше понимать, что происходит при использовании клиентом
+                  программного обеспечения;</span></li>
+            </p>
+
+            <div class=cv-img><img src=# class=photo>
+              <a href=# target=_blank class=cv-dl-button><i class="fas fa-download"></i> Скачать (.pdf)</a>
+              <!-- <a href="https://wakatime.com/@018d1399-6960-40bb-9057-bd9efa82b811">
+                <img src="https://wakatime.com/badge/user/018d1399-6960-40bb-9057-bd9efa82b811.svg" 
+                alt="Total time coded since Jan 16 2024" /></a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+        <div class="sv_skils">
+          <h2><a>Навыки</a></h2>
+          <div class=cv-block-wrapper>
+            <div class=skills_wrapper>
+              <span>Python</span>
+              <span>Django</span>
+              <span>DRF</span>
+              <span>FastApi</span>
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>RabbitMQ</span>
+              <span>Celery</span>
+              <span>Redis</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Unit testing</span>
+              <span>Linux</span>
+              <span>Git</span>
+              <span>ООП</span>
+              <span>Postman</span>
+              <span>MVC</span>
+              <span>Docker в процессе обучения</span>
+              <span>Docker Compose в процессе обучения</span>
+              <span>CI/CD в процессе обучения</span>
+              <span>Nginx в процессе обучения</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Резюме</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="resume-item pb-0">
+              <h3 class="resume-title">Образование</h3>
+              <ul>
+                <li>
+                  <h5>2009 - 2011</h5>
+                  <p><em>Самарский областной техникум аграрного и промышленного сервиса</em></p>
+                </li>
+                <li>
+                  <h5>2007 - 2012</h5>
+                  <p><em>Самарская Государственная Сельскохозяйственная Академия,
+                      Механизация сельского хозяйства, Топливозаправочные комплексы и нефтесклады</em></p>
+                </li>
+                <li>
+                  <h5>2021 - 2022</h5>
+                  <p><em>SkillFactory
+                      Курс Python разработчик, Python developer</em></p>
+                </li>
+                <li>
+                  <h5>2022</h5>
+                  <p><em>Stepik
+                      Курс "Поколение Python"</em></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Опыт работы</h3>
+            <div class="resume-item">
+              <h4>Python developer</h4>
+              <h5>Июнь 2023 - Август 2023</h5>
+              <p><em>Федерация спортивного туризма России </em></p>
+              <ul>
+                <li>
+                  <a href="https://github.com/BorisovDmitriy/FSTR_API_SF">Создание REST API, которое обслуживает
+                    мобильное приложение для Android, что позволит туристам
+                    вносить данные о перевалах.</a>
+                </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Инженер-технолог</h4>
+              <h5>2012 - по настоящее время</h5>
+              <p><em>Производственный комплекс ЭЛЕКТРУМ, Самара </em></p>
+              <ul>
+                <li>Курирую направление сборки электротехнических шкафов низкого напряжения (от заготовки до готовой
+                  продукции).</li>
+                <li>Выпуск ТИ, ТП, Программ контроля, контрольных карт, подготовка ТЗ для СТО </li>
+                <li>Создание планировок и выкопировок</li>
+                <li>Проверка КД на соответствие ЕСТД, ЕСКД и запуск в производство</li>
+                <li>Навыки: Office, Adem, Компас-3D,Solidworks 2012, 1С 8 Производство, Документооборот.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Проектная работа</h4>
+              <h5>2024 - по настоящее время</h5>
+              <p><em>Производственный комплекс ЭЛЕКТРУМ, Самара </em></p>
+              <ul>
+                <li>Принимаю участие в создании сервиса по нормированию технологических операций</li>
+                <li>Создание сервиса по хранению и структуризации технологической документации</li>
+                <li>Интеграция созданных Веб-сервисов с действующей 1С структурой</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Языки</h2>
+          <ul>
+            <li>
+              <p>Русский- родной</p>
+            </li>
+            <li>
+              <p>Английский - Intermediate(В1) </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </section> -->
+    <!-- End Portfolio Section -->
+
+    <!-- ======= book Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="resume-item pb-0">
+              <h3 class="section-title">Языки</h3>
+              <ul>
+                <li>
+                  <p><em>Русский- родной</em></p>
+                </li>
+                <li>
+                  <p><em>Английский - Intermediate(В1)</em></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="section-title">Книги</h3>
+            <div class="resume-item">
+              <h4>Изучаем Python</h4>
+              <p><em> Марк Лутц </em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Computer Science</h4>
+              <p><em> Кори Альтхофф</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Django 3.0 Практика создания веб-сайтов на Python</h4>
+              <p><em> Владимир Дронов</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>English Grammar in Use</h4>
+              <p><em> Раймонд Мерфи</em></p>
+            </div>
+          </div>
+        </div>
+    </section><!-- End book Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Сервис</h2>
+          <p>Описание </p>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                sint occaecati cupiditate non provident</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Services Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Контакты</h2>
+          <p>Описание</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Место положение:</h4>
+                <p>Самара, Россия</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>texno_log_90@mail.ru</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Телефон:</h4>
+                <p>+7-927-738-26-22</p>
+              </div>
+
+              <iframe src="https://yandex.ru/maps/-/CDq55KMN" frameborder="0"
+                style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <a href="https://duckduckgo.com/" target="myframe">DuckDuckGo</a>
+            </div>
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Ваш Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Предмет</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Сообщение</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Подождите</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Ваше сообщение было отправлено. Спасибо!</div>
+              </div>
+              <div class="text-center"><button type="submit">Отправить сообщение</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>End Contact Section -->
+
+    <!-- ======= Portfolio(Sertificate) Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Сертификаты</h2>
+        </div>
+
+        <!-- <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'images/portfolio/Skillfactory.png'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'images/portfolio/Skillfactory.png'%}" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'images/portfolio/Stajirovka.png'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'images/portfolio/Stajirovka.png'%}" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'images/portfolio/Stepik_pro.png'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'images/portfolio/Stepik_pro.png'%}" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'images/portfolio/Stepik.png'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'images/portfolio/Stepik.png'%}" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section><!-- End Portfolio(Sertificate) Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        Samara <strong><span>2024</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        <a>Сustom improvements</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor_portfo/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'vendor_portfo/aos/aos.js'%}"></script>
+  <script src="{% static 'vendor_portfo/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'vendor_portfo/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'vendor_portfo/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'vendor_portfo/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'vendor_portfo/typed.js/typed.umd.js'%}"></script>
+  <script src="{% static 'vendor_portfo/waypoints/noframework.waypoints.js'%}"></script>
+  <script src="{% static 'vendor_portfo/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js'%}"></script>
+</body>
+
+</html>
